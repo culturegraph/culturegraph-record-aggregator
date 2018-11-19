@@ -1,5 +1,7 @@
 = CultureGraph Record Aggregator
 
+image::https://jitpack.io/v/culturegraph/culturegraph-record-aggregator.svg[link="https://jitpack.io/#culturegraph/culturegraph-record-aggregator"]
+
 A library that uses link:https://github.com/marc4j/marc4j[marc4j] to aggregate MARC21 records into a single record.
 
 == Introduction
