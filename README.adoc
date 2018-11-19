@@ -9,7 +9,7 @@ A library that uses link:https://github.com/marc4j/marc4j[marc4j] to aggregate M
 The CultureGraph project produces groups of records that could be identified by
 comparing them using a rule based matching procedure.
 
-The library targets the export of those identified records into a single records.
+The library targets the export of those identified records into a single record.
 
 == Procedure
 
