@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim">
+<?xml version="1.0" encoding="UTF-8"?><marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim">
     <marc:record>
         <marc:leader>00000nam a2200000 a 4500</marc:leader>
         <marc:controlfield tag="001">CG_1_NOW</marc:controlfield>
@@ -60,7 +59,6 @@
             <marc:subfield code="c">0,23683</marc:subfield>
             <marc:subfield code="d">20180813</marc:subfield>
             <marc:subfield code="8">4\p</marc:subfield>
-            <marc:subfield code="8">3\p</marc:subfield>
         </marc:datafield>
     </marc:record>
 </marc:collection>
