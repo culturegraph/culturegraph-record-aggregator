@@ -222,8 +222,8 @@ public class AggregatedRecordBuilderImpl implements AggregatedRecordBuilder {
         for (DataField df: record.getDataFields()) {
             List<Subfield> subfields = df.getSubfields('8');
 
-            boolean isProvenanceField = df.getTag().startsWith("883");
-            if (!isProvenanceField) {
+            String tag = df.getTag();
+            if (!tag.equals("035") && !tag.equals("883")) {
                 df.addSubfield(factory.newSubfield('8', recordFieldLink.asString()));
             }
 

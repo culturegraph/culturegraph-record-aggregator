@@ -187,6 +187,25 @@ public class AggregatedRecordBuilderImplTest {
         assertThat(all883data, hasItem("4\\p"));
     }
 
+    @Test
+    public void shouldNotModifyDatafield035() {
+        Record record = new RecordBuilder()
+                .addControlField("001", "001")
+                .addControlField("003", "003")
+                .addDataField("035", ' ', ' ')
+                .addSubfield('a', "035_a")
+                .build();
+
+        AggregatedRecordBuilderImpl builder = new AggregatedRecordBuilderImpl();
+        builder.add(record);
+        Record actual = builder.build();
+
+        List<String> data = allSubfieldData(actual, "035");
+
+        assertThat(data, hasSize(3));
+        assertThat(data, containsInAnyOrder("035_a", "(003)001", "1\\p"));
+    }
+
     @Ignore
     @Test
     public void printAggregatedRecordAsMARCXMLForTwoAggregates() throws Exception {

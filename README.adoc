@@ -17,7 +17,7 @@ Assuming a collection of records as input:
 
 * For each record _r_
 1. Add the data field link:https://www.loc.gov/marc/authority/ad035.html[035] (contains a field link _fl_)
-2. Mark each data field (exclude field link:http://www.loc.gov/marc/bibliographic/bd883.html[883]) in _r_ with the field link _fl_
+2. Mark each data field (exclude field 035 and link:http://www.loc.gov/marc/bibliographic/bd883.html[883]) in _r_ with the field link _fl_
 
 * Collect all data fields from all records
 1. Re-Enumerate all field links (ascending order)
