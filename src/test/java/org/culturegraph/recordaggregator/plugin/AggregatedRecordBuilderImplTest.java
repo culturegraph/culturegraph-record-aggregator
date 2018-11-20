@@ -208,7 +208,7 @@ public class AggregatedRecordBuilderImplTest {
 
     @Ignore
     @Test
-    public void printAggregatedRecordAsMARCXMLForTwoAggregates() throws Exception {
+    public void printAggregatedRecordAsMARCXML() throws Exception {
         AggregatedRecordBuilderImpl aggregator = new AggregatedRecordBuilderImpl();
         aggregator.setBuildNumberPrefix("CG_");
         aggregator.setBuildNumberSuffix("_NOW");
