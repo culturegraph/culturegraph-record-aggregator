@@ -218,10 +218,6 @@ public class AggregatedRecordBuilderImplTest {
         ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
         MarcXmlWriter writer = new MarcXmlWriter(outputStream, indent);
 
-        writer.write(createRecordOne());
-        writer.write(createRecordTwo());
-        writer.write(createRecordThree());
-
         aggregator.add(createRecordOne());
         aggregator.add(createRecordTwo());
         aggregator.add(createRecordThree());
