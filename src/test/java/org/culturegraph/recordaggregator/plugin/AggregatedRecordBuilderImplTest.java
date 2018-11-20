@@ -228,12 +228,6 @@ public class AggregatedRecordBuilderImplTest {
 
         writer.write(aggregator.build());
 
-        aggregator.add(createRecordOne());
-        aggregator.add(createRecordTwo());
-        aggregator.add(createRecordThree());
-
-        writer.write(aggregator.build());
-
         writer.close();
         outputStream.close();
 
