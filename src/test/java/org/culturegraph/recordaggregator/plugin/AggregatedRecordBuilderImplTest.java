@@ -3,14 +3,17 @@ package org.culturegraph.recordaggregator.plugin;
 import helper.RecordBuilder;
 
 import java.io.ByteArrayOutputStream;
+import java.io.InputStream;
 import java.nio.charset.StandardCharsets;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
+import org.culturegraph.recordaggregator.core.entity.AggregatedRecordBuilder;
 import org.junit.Before;
 import org.junit.Ignore;
 import org.junit.Test;
+import org.marc4j.MarcXmlReader;
 import org.marc4j.MarcXmlWriter;
 import org.marc4j.marc.ControlField;
 import org.marc4j.marc.DataField;
@@ -230,6 +233,29 @@ public class AggregatedRecordBuilderImplTest {
         String marcxml = new String(outputStream.toByteArray(), StandardCharsets.UTF_8);
         System.out.println(marcxml);
     }
+
+    @Test
+    public void issueWithNonAggregatedDatafield689() throws Exception {
+        InputStream inputStream = getClass().getClassLoader().getResourceAsStream("issueDatafield689.marcxml");
+        MarcXmlReader reader = new MarcXmlReader(inputStream);
+
+        AggregatedRecordBuilder builder = AggregatedRecordBuilderFactory.newBuilder();
+
+        while (reader.hasNext()) {
+            Record record = reader.next();
+            builder.add(record);
+        }
+
+        Record result = builder.build();
+        DataField df689 = (DataField) result.getVariableField("689");
+        List<Subfield> subfields = df689.getSubfields('8');
+
+        assertThat(subfields, hasSize(2));
+
+        List<String> data = subfields.stream().map(Subfield::getData).collect(Collectors.toList());
+        assertThat(data, containsInAnyOrder("1\\p", "2\\p"));
+    }
+
 
     private List<String> allSubfieldData(Record record, String tag) {
         return  record.getVariableFields(tag).stream()

@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<collection xmlns="http://www.loc.gov/MARC21/slim">
+    <record>
+        <leader>01171pam a2200349 c 4500</leader>
+        <controlfield tag="001">941465128</controlfield>
+        <controlfield tag="003">DE-101</controlfield>
+        <controlfield tag="005">20071231152508.0</controlfield>
+        <controlfield tag="007">tu</controlfield>
+        <controlfield tag="008">940622s1994    gw |||||r|||| 00||||ger  </controlfield>
+        <datafield ind1=" " ind2=" " tag="015">
+            <subfield code="a">94,A49,0213</subfield>
+            <subfield code="z">94,N34,0037</subfield>
+            <subfield code="2">dnb</subfield>
+        </datafield>
+        <datafield ind1="7" ind2=" " tag="016">
+            <subfield code="2">DE-101</subfield>
+            <subfield code="a">941465128</subfield>
+        </datafield>
+        <datafield ind1=" " ind2=" " tag="020">
+            <subfield code="a">3772511902</subfield>
+            <subfield code="c">Pp. : DM 26.00, sfr 27.00, S 203.00</subfield>
+            <subfield code="9">3-7725-1190-2</subfield>
+        </datafield>
+        <datafield ind1=" " ind2=" " tag="035">
+            <subfield code="a">(DE-599)DNB941465128</subfield>
+        </datafield>
+        <datafield ind1=" " ind2=" " tag="035">
+            <subfield code="a">(OCoLC)75480589</subfield>
+        </datafield>
+        <datafield ind1=" " ind2=" " tag="040">
+            <subfield code="a">1240</subfield>
+            <subfield code="b">ger</subfield>
+            <subfield code="c">DE-101</subfield>
+            <subfield code="d">9999</subfield>
+            <subfield code="e">rakwb</subfield>
+        </datafield>
+        <datafield ind1=" " ind2=" " tag="041">
+            <subfield code="a">ger</subfield>
+        </datafield>
+        <datafield ind1=" " ind2=" " tag="044">
+            <subfield code="c">XA-DE</subfield>
+        </datafield>
+        <datafield ind1="7" ind2="4" tag="082">
+            <subfield code="q">DE-101</subfield>
+            <subfield code="2">22sdnb</subfield>
+        </datafield>
+        <datafield ind1=" " ind2=" " tag="084">
+            <subfield code="a">07</subfield>
+            <subfield code="a">K</subfield>
+            <subfield code="q">DE-101</subfield>
+            <subfield code="2">sdnb</subfield>
+        </datafield>
+        <datafield ind1=" " ind2=" " tag="084">
+            <subfield code="a">12.2b</subfield>
+            <subfield code="q">DE-101</subfield>
+            <subfield code="2">sswd</subfield>
+        </datafield>
+        <datafield ind1="1" ind2=" " tag="100">
+            <subfield code="0">(DE-588)118799495</subfield>
+            <subfield code="0">(DE-101)118799495</subfield>
+            <subfield code="a">Sutcliff, Rosemary</subfield>
+            <subfield code="d">1920-1992</subfield>
+            <subfield code="4">aut</subfield>
+        </datafield>
+        <datafield ind1="1" ind2="0" tag="245">
+            <subfield code="a">Beowulf der Drachentöter</subfield>
+            <subfield code="c">Rosemary Sutcliff. Aus dem Engl. von Astrid von dem Borne. Mit Ill. von Victor Ambrus</subfield>
+        </datafield>
+        <datafield ind1="3" ind2=" " tag="260">
+            <subfield code="a">Stuttgart</subfield>
+            <subfield code="b">Verl. Freies Geistesleben</subfield>
+            <subfield code="c">1994</subfield>
+        </datafield>
+        <datafield ind1=" " ind2=" " tag="300">
+            <subfield code="a">103 S.</subfield>
+            <subfield code="b">Ill.</subfield>
+            <subfield code="c">21 cm</subfield>
+        </datafield>
+        <datafield ind1="0" ind2="7" tag="630">
+            <subfield code="0">(DE-588)4128795-2</subfield>
+            <subfield code="0">(DE-101)041287959</subfield>
+            <subfield code="a">Beowulf</subfield>
+            <subfield code="2">gnd</subfield>
+        </datafield>
+        <datafield ind1=" " ind2="7" tag="655">
+            <subfield code="a">Jugendbuch</subfield>
+            <subfield code="2">gnd</subfield>
+        </datafield>
+        <datafield ind1="0" ind2="0" tag="689">
+            <subfield code="0">(DE-588)4128795-2</subfield>
+            <subfield code="0">(DE-101)041287959</subfield>
+            <subfield code="D">u</subfield>
+            <subfield code="a">Beowulf</subfield>
+        </datafield>
+        <datafield ind1="0" ind2="1" tag="689">
+            <subfield code="A">f</subfield>
+            <subfield code="a">Jugendbuch</subfield>
+        </datafield>
+        <datafield ind1="0" ind2=" " tag="689">
+            <subfield code="5">DE-101</subfield>
+            <subfield code="5">DE-101</subfield>
+        </datafield>
+        <datafield ind1="0" ind2=" " tag="730">
+            <subfield code="a">Beowulf</subfield>
+            <subfield code="g">dt.</subfield>
+        </datafield>
+        <datafield ind1="r" ind2=" " tag="925">
+            <subfield code="a">ra</subfield>
+        </datafield>
+    </record>
+
+    <record>
+        <leader>01541pam a2200433 c 4500</leader>
+        <controlfield tag="001">1017607311</controlfield>
+        <controlfield tag="003">DE-101</controlfield>
+        <controlfield tag="005">20120319233041.0</controlfield>
+        <controlfield tag="007">tu</controlfield>
+        <controlfield tag="008">111201s2012    gw |||||r|||| 00||||ger  </controlfield>
+        <datafield ind1=" " ind2=" " tag="015">
+            <subfield code="a">12,A13</subfield>
+            <subfield code="z">11,N49</subfield>
+            <subfield code="2">dnb</subfield>
+        </datafield>
+        <datafield ind1="7" ind2=" " tag="016">
+            <subfield code="2">DE-101</subfield>
+            <subfield code="a">1017607311</subfield>
+        </datafield>
+        <datafield ind1=" " ind2=" " tag="020">
+            <subfield code="a">9783772523861</subfield>
+            <subfield code="c">Pp. : EUR 12.00 (DE)</subfield>
+            <subfield code="9">978-3-7725-2386-1</subfield>
+        </datafield>
+        <datafield ind1="3" ind2=" " tag="024">
+            <subfield code="a">9783772523861</subfield>
+        </datafield>
+        <datafield ind1=" " ind2=" " tag="035">
+            <subfield code="a">(DE-599)DNB1017607311</subfield>
+        </datafield>
+        <datafield ind1=" " ind2=" " tag="035">
+            <subfield code="a">(OCoLC)782971559</subfield>
+        </datafield>
+        <datafield ind1=" " ind2=" " tag="040">
+            <subfield code="a">1245</subfield>
+            <subfield code="b">ger</subfield>
+            <subfield code="c">DE-101</subfield>
+            <subfield code="d">9999</subfield>
+            <subfield code="e">rakwb</subfield>
+        </datafield>
+        <datafield ind1=" " ind2=" " tag="041">
+            <subfield code="a">ger</subfield>
+            <subfield code="h">eng</subfield>
+        </datafield>
+        <datafield ind1=" " ind2=" " tag="044">
+            <subfield code="c">XA-DE-BW</subfield>
+        </datafield>
+        <datafield ind1="7" ind2="4" tag="082">
+            <subfield code="a">K</subfield>
+            <subfield code="q">DE-101</subfield>
+            <subfield code="2">22sdnb</subfield>
+        </datafield>
+        <datafield ind1=" " ind2=" " tag="084">
+            <subfield code="a">K</subfield>
+            <subfield code="q">DE-101</subfield>
+            <subfield code="2">sdnb</subfield>
+        </datafield>
+        <datafield ind1=" " ind2=" " tag="090">
+            <subfield code="a">b</subfield>
+        </datafield>
+        <datafield ind1="1" ind2=" " tag="100">
+            <subfield code="0">(DE-588)118799495</subfield>
+            <subfield code="0">(DE-101)118799495</subfield>
+            <subfield code="a">Sutcliff, Rosemary</subfield>
+            <subfield code="d">1920-1992</subfield>
+            <subfield code="4">aut</subfield>
+        </datafield>
+        <datafield ind1="1" ind2="0" tag="245">
+            <subfield code="a">Beowulf der Drachentöter</subfield>
+            <subfield code="c">Rosemary Sutcliff. Aus dem Engl. von Astrid von dem Borne. Mit Ill. von Victor Ambrus</subfield>
+        </datafield>
+        <datafield ind1=" " ind2=" " tag="250">
+            <subfield code="a">Neuausg.</subfield>
+        </datafield>
+        <datafield ind1=" " ind2=" " tag="259">
+            <subfield code="a">ne</subfield>
+        </datafield>
+        <datafield ind1="3" ind2=" " tag="260">
+            <subfield code="a">Stuttgart</subfield>
+            <subfield code="b">Verl. Freies Geistesleben</subfield>
+            <subfield code="c">2012</subfield>
+        </datafield>
+        <datafield ind1=" " ind2=" " tag="300">
+            <subfield code="a">117 S.</subfield>
+            <subfield code="b">Ill.</subfield>
+            <subfield code="c">22 cm</subfield>
+        </datafield>
+        <datafield ind1="0" ind2="7" tag="630">
+            <subfield code="0">(DE-588)4128795-2</subfield>
+            <subfield code="0">(DE-101)041287959</subfield>
+            <subfield code="a">Beowulf</subfield>
+            <subfield code="2">gnd</subfield>
+        </datafield>
+        <datafield ind1=" " ind2="7" tag="655">
+            <subfield code="a">Jugendbuch</subfield>
+            <subfield code="2">gnd</subfield>
+        </datafield>
+        <datafield ind1=" " ind2="7" tag="655">
+            <subfield code="0">(DE-101)101071841X</subfield>
+            <subfield code="a">Jugendbücher ab 12 Jahre</subfield>
+            <subfield code="2">gatbeg</subfield>
+        </datafield>
+        <datafield ind1="0" ind2="0" tag="689">
+            <subfield code="0">(DE-588)4128795-2</subfield>
+            <subfield code="0">(DE-101)041287959</subfield>
+            <subfield code="D">u</subfield>
+            <subfield code="a">Beowulf</subfield>
+        </datafield>
+        <datafield ind1="0" ind2="1" tag="689">
+            <subfield code="A">f</subfield>
+            <subfield code="a">Jugendbuch</subfield>
+        </datafield>
+        <datafield ind1="0" ind2=" " tag="689">
+            <subfield code="5">DE-101</subfield>
+            <subfield code="5">DE-101</subfield>
+        </datafield>
+        <datafield ind1="1" ind2=" " tag="700">
+            <subfield code="0">(DE-588)136734952</subfield>
+            <subfield code="0">(DE-101)136734952</subfield>
+            <subfield code="a">Borne, Astrid von dem</subfield>
+            <subfield code="4">trl</subfield>
+            <subfield code="e">Übers.</subfield>
+        </datafield>
+        <datafield ind1="1" ind2=" " tag="700">
+            <subfield code="0">(DE-588)174691068</subfield>
+            <subfield code="0">(DE-101)174691068</subfield>
+            <subfield code="a">Ambrus, Victor</subfield>
+            <subfield code="4">ill</subfield>
+            <subfield code="e">Ill.</subfield>
+        </datafield>
+        <datafield ind1="1" ind2=" " tag="700">
+            <subfield code="0">(DE-588)113772408</subfield>
+            <subfield code="0">(DE-101)113772408</subfield>
+            <subfield code="a">Martin, John F.</subfield>
+            <subfield code="4">cre</subfield>
+        </datafield>
+        <datafield ind1="0" ind2=" " tag="730">
+            <subfield code="a">Beowulf</subfield>
+            <subfield code="g">dt.</subfield>
+        </datafield>
+        <datafield ind1="r" ind2=" " tag="925">
+            <subfield code="a">ra</subfield>
+        </datafield>
+    </record>
+</collection>

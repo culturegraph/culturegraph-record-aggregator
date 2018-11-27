@@ -1,6 +1,7 @@
 package org.culturegraph.recordaggregator.plugin;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
@@ -57,7 +58,6 @@ public class AggregatedRecordBuilderImpl implements AggregatedRecordBuilder {
     @Override
     public void add(Record record) {
         linkEachDataFieldToIdn(record);
-
         if (records.isEmpty()) {
             Optional<FieldLink> opt = findMaxFieldLink(record.getDataFields());
             if (!opt.isPresent()) throw new IllegalArgumentException("Could not find any field link (subfield $8) in record.");
@@ -80,7 +80,14 @@ public class AggregatedRecordBuilderImpl implements AggregatedRecordBuilder {
         List<DataField> allDataFields = records.stream()
                 .map(Record::getDataFields)
                 .flatMap(List::stream)
-                .sorted()
+                .sorted(new Comparator<DataField>() {
+                    @Override
+                    public int compare(DataField o1, DataField o2) {
+                        String tag1 = o1.getTag() + o1.getIndicator1() + o1.getIndicator2();
+                        String tag2 = o2.getTag() + o2.getIndicator1() + o2.getIndicator2();
+                        return tag1.compareTo(tag2);
+                    }
+                })
                 .collect(Collectors.toList());
 
         DataField lastDataField = null;

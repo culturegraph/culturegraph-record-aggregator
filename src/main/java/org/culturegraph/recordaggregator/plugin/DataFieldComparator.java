@@ -17,6 +17,7 @@ public class DataFieldComparator implements Comparator<DataField> {
     @Override
     public int compare(DataField o1, DataField o2) {
         if (o1.compareTo(o2) != 0) return -1;
+        if (o1.getIndicator1() != o2.getIndicator1() && o1.getIndicator2() != o2.getIndicator2()) return -1;
 
         Iterator<Subfield> iter1 = o1.getSubfields().stream().filter(sf -> sf.getCode() != ignoreSubfieldCode).iterator();
         Iterator<Subfield> iter2 = o2.getSubfields().stream().filter(sf -> sf.getCode() != ignoreSubfieldCode).iterator();
