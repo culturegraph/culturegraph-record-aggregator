@@ -5,6 +5,10 @@ import helper.RecordBuilder;
 import java.io.ByteArrayOutputStream;
 import java.io.InputStream;
 import java.nio.charset.StandardCharsets;
+import java.time.LocalDateTime;
+import java.time.ZoneOffset;
+import java.time.ZonedDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -273,7 +277,13 @@ public class AggregatedRecordBuilderImplTest {
     public void printAggregatedRecordAsMARCXML() throws Exception {
         AggregatedRecordBuilderImpl aggregator = new AggregatedRecordBuilderImpl();
         aggregator.setBuildNumberPrefix("CG_");
-        aggregator.setBuildNumberSuffix("_NOW");
+
+        LocalDateTime ltd = LocalDateTime.now();
+        ZonedDateTime utc = ltd.atZone(ZoneOffset.UTC).withZoneSameInstant(ZoneOffset.UTC);
+        DateTimeFormatter formatter = DateTimeFormatter.ISO_INSTANT;
+        String suffix = formatter.format(utc);
+
+        aggregator.setBuildNumberSuffix("_" + suffix);
         aggregator.setCatalogingAgency("DE-101");
 
         boolean indent = true;
