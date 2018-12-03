@@ -209,6 +209,65 @@ public class AggregatedRecordBuilderImplTest {
         assertThat(data, containsInAnyOrder("035_a", "(003)001", "1\\p"));
     }
 
+    @Test
+    public void issueWithNonAggregatedDatafield689() throws Exception {
+        InputStream inputStream = getClass().getClassLoader().getResourceAsStream("issueDatafield689.marcxml");
+        MarcXmlReader reader = new MarcXmlReader(inputStream);
+
+        AggregatedRecordBuilder builder = AggregatedRecordBuilderFactory.newBuilder();
+
+        while (reader.hasNext()) {
+            Record record = reader.next();
+            builder.add(record);
+        }
+
+        Record result = builder.build();
+        DataField df689 = (DataField) result.getVariableField("689");
+        List<Subfield> subfields = df689.getSubfields('8');
+
+        assertThat(subfields, hasSize(2));
+
+        List<String> data = subfields.stream().map(Subfield::getData).collect(Collectors.toList());
+        assertThat(data, containsInAnyOrder("1\\p", "2\\p"));
+    }
+
+    @Test
+    public void shouldAlsoIncrementNonProvenanceFields() {
+        Record record1 = new RecordBuilder()
+                .addControlField("001", "326216537")
+                .addControlField("003", "DE-601")
+
+                .addDataField("041", '0', ' ')
+                .addSubfield('8', "1\\u")
+                .addSubfield('a', "eng")
+
+                .build();
+
+        Record record2 = new RecordBuilder()
+                .addControlField("001", "326216537-2")
+                .addControlField("003", "DE-601")
+
+                .addDataField("041", '0', ' ')
+                .addSubfield('8', "1\\u")
+                .addSubfield('a', "eng")
+
+                .build();
+
+        AggregatedRecordBuilder builder = AggregatedRecordBuilderFactory.newBuilder();
+
+        builder.add(record1);
+        builder.add(record2);
+        Record result = builder.build();
+
+        DataField df = (DataField)  result.getVariableField("041");
+        assertThat(df.toString(), startsWith("041 0 "));
+        assertThat(df.toString(), containsString("$aeng"));
+        assertThat(df.toString(), containsString("$81\\p"));
+        assertThat(df.toString(), containsString("$82\\p"));
+        assertThat(df.toString(), containsString("$82\\u"));
+        assertThat(df.toString(), containsString("$83\\u"));
+    }
+
     @Ignore
     @Test
     public void printAggregatedRecordAsMARCXML() throws Exception {
@@ -233,29 +292,6 @@ public class AggregatedRecordBuilderImplTest {
         String marcxml = new String(outputStream.toByteArray(), StandardCharsets.UTF_8);
         System.out.println(marcxml);
     }
-
-    @Test
-    public void issueWithNonAggregatedDatafield689() throws Exception {
-        InputStream inputStream = getClass().getClassLoader().getResourceAsStream("issueDatafield689.marcxml");
-        MarcXmlReader reader = new MarcXmlReader(inputStream);
-
-        AggregatedRecordBuilder builder = AggregatedRecordBuilderFactory.newBuilder();
-
-        while (reader.hasNext()) {
-            Record record = reader.next();
-            builder.add(record);
-        }
-
-        Record result = builder.build();
-        DataField df689 = (DataField) result.getVariableField("689");
-        List<Subfield> subfields = df689.getSubfields('8');
-
-        assertThat(subfields, hasSize(2));
-
-        List<String> data = subfields.stream().map(Subfield::getData).collect(Collectors.toList());
-        assertThat(data, containsInAnyOrder("1\\p", "2\\p"));
-    }
-
 
     private List<String> allSubfieldData(Record record, String tag) {
         return  record.getVariableFields(tag).stream()

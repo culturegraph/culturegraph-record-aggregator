@@ -1,10 +1,13 @@
 package org.culturegraph.recordaggregator.plugin;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 import java.util.stream.Collectors;
 
-import org.culturegraph.recordaggregator.core.entity.FieldLink;
 import org.culturegraph.recordaggregator.core.entity.AggregatedRecordBuilder;
+import org.culturegraph.recordaggregator.core.entity.FieldLink;
 import org.marc4j.marc.ControlField;
 import org.marc4j.marc.DataField;
 import org.marc4j.marc.MarcFactory;
@@ -13,27 +16,30 @@ import org.marc4j.marc.Subfield;
 
 public class AggregatedRecordBuilderImpl implements AggregatedRecordBuilder {
 
+    private static String PROVENANCE = "p";
+    private static char FIELD_LINK_CODE = '8';
+
     private int buildNumber;
     private String prefix;
     private String suffix;
     private String catalogingAgency;
 
-    private List<Record> records;
-    private FieldLink lastFieldLink;
     private MarcFactory factory;
-    private DataFieldComparator comparator;
+    private List<Record> records;
+    private DataFieldComparator dataFieldComparator;
+    private Map<String,FieldLink> lastFieldLinks;
 
     public AggregatedRecordBuilderImpl() {
         this.buildNumber = 0;
         this.prefix = "";
         this.suffix = "";
-
-        this.records = new ArrayList<>();
-        this.factory = MarcFactory.newInstance();
-        this.comparator = new DataFieldComparator('8');
-        this.lastFieldLink = new FieldLink(0, "p");
-
         this.catalogingAgency = "";
+
+        this.factory = MarcFactory.newInstance();
+        this.records = new ArrayList<>();
+        this.dataFieldComparator = new DataFieldComparator(FIELD_LINK_CODE);
+        /** Contains the last field link for each type */
+        this.lastFieldLinks = new HashMap<>();
     }
 
     public List<Record> getRecords() {
@@ -55,14 +61,12 @@ public class AggregatedRecordBuilderImpl implements AggregatedRecordBuilder {
     @Override
     public void add(Record record) {
         linkEachDataFieldToIdn(record);
+
         if (records.isEmpty()) {
-            Optional<FieldLink> opt = findMaxFieldLink(record.getDataFields());
-            if (!opt.isPresent()) throw new IllegalArgumentException("Could not find any field link (subfield $8) in record.");
-            lastFieldLink = opt.get();
+            findMaxFieldLink(record.getDataFields(), lastFieldLinks);
         } else {
-            Optional<FieldLink> opt = incrementAllFieldLinks(record.getDataFields(), lastFieldLink.number);
-            if (!opt.isPresent()) throw new IllegalArgumentException("Could not find any field link (subfield $8) in record.");
-            lastFieldLink = opt.get();
+            FieldLink lastProvenanceFieldLink = lastFieldLinks.getOrDefault(PROVENANCE, FieldLink.of("1\\p"));
+            incrementAllFieldLinks(record.getDataFields(), lastProvenanceFieldLink.number, lastFieldLinks);
         }
 
         records.add(record);
@@ -77,14 +81,7 @@ public class AggregatedRecordBuilderImpl implements AggregatedRecordBuilder {
         List<DataField> allDataFields = records.stream()
                 .map(Record::getDataFields)
                 .flatMap(List::stream)
-                .sorted(new Comparator<DataField>() {
-                    @Override
-                    public int compare(DataField o1, DataField o2) {
-                        String tag1 = o1.getTag() + o1.getIndicator1() + o1.getIndicator2();
-                        String tag2 = o2.getTag() + o2.getIndicator1() + o2.getIndicator2();
-                        return tag1.compareTo(tag2);
-                    }
-                })
+                .sorted(dataFieldComparator)
                 .collect(Collectors.toList());
 
         DataField lastDataField = null;
@@ -94,8 +91,8 @@ public class AggregatedRecordBuilderImpl implements AggregatedRecordBuilder {
                 continue;
             }
 
-            if (comparator.compare(lastDataField, df) == 0) {
-                lastDataField.addSubfield(df.getSubfield('8'));
+            if (dataFieldComparator.compare(lastDataField, df) == 0) {
+                df.getSubfields(FIELD_LINK_CODE).forEach(lastDataField::addSubfield);
             } else {
                 result.addVariableField(lastDataField);
                 lastDataField = df;
@@ -106,8 +103,8 @@ public class AggregatedRecordBuilderImpl implements AggregatedRecordBuilder {
 
         // Purge stored records
         records = new ArrayList<>();
-        // Reset max field link
-        lastFieldLink = new FieldLink(0, "p");
+        // Reset last field links
+        lastFieldLinks = new HashMap<>();
 
         String id = prefix.isEmpty() && suffix.isEmpty() ? String.valueOf(buildNumber) : prefix + buildNumber + suffix;
         result.addVariableField(factory.newControlField("001", id));
@@ -120,51 +117,51 @@ public class AggregatedRecordBuilderImpl implements AggregatedRecordBuilder {
     public void reset() {
         buildNumber = 0;
         records = new ArrayList<>();
-        lastFieldLink = new FieldLink(0, "p");
+        lastFieldLinks = new HashMap<>();
     }
 
     /**
      * Increments each field link (subfield 8 in a data field) by a constant <i>addend</i> among all data fields, if present.
      * @return Field link with the highest sequence number among all data fields after the modification, if present.
      */
-    private Optional<FieldLink> incrementAllFieldLinks(List<DataField> dataFields, int addend) {
-        FieldLink max = null;
+    private void incrementAllFieldLinks(List<DataField> dataFields, int addend, Map<String,FieldLink> lastFieldLinks) {
 
         for (DataField df: dataFields) {
-            for (Subfield sf: df.getSubfields('8')) {
+            for (Subfield sf: df.getSubfields(FIELD_LINK_CODE)) {
                 FieldLink fl = FieldLink.of(sf.getData()).increment(addend);
+                String type = fl.type;
 
-                if (max == null) {
-                    max = fl;
+                if (lastFieldLinks.getOrDefault(type, null) == null) {
+                    lastFieldLinks.put(type, fl);
                 } else {
-                    max = max.compareTo(fl) > 0 ? max : fl;
+                    FieldLink maximum = lastFieldLinks.get(type);
+                    maximum = maximum.compareTo(fl) > 0 ? maximum : fl;
+                    lastFieldLinks.put(type, maximum);
                 }
 
                 sf.setData(fl.asString());
             }
         }
-
-        return Optional.ofNullable(max);
     }
 
     /**
      * Finds the field link (subfield 8 in a data field) with the highest sequence number among all data fields, if present.
      */
-    private Optional<FieldLink> findMaxFieldLink(List<DataField> dataFields) {
-        FieldLink max = null;
-
+    private void findMaxFieldLink(List<DataField> dataFields, Map<String,FieldLink> lastFieldLinks) {
         for (DataField df: dataFields) {
-            for (Subfield sf: df.getSubfields('8')) {
+            for (Subfield sf: df.getSubfields(FIELD_LINK_CODE)) {
                 FieldLink fl = FieldLink.of(sf.getData());
-                if (max == null) {
-                    max = fl;
+                String type = fl.type;
+
+                if (lastFieldLinks.getOrDefault(type, null) == null) {
+                    lastFieldLinks.put(type, fl);
                 } else {
-                    max = max.compareTo(fl) > 0 ? max : fl;
+                    FieldLink maximum = lastFieldLinks.get(type);
+                    maximum = maximum.compareTo(fl) > 0 ? maximum : fl;
+                    lastFieldLinks.put(type, maximum);
                 }
             }
         }
-
-        return Optional.ofNullable(max);
     }
 
     /**
@@ -221,14 +218,14 @@ public class AggregatedRecordBuilderImpl implements AggregatedRecordBuilder {
     private void linkEachDataFieldToIdn(Record record) {
         String idn = createIdn(record);
 
-        FieldLink recordFieldLink = new FieldLink(1, "p");
+        FieldLink recordFieldLink = new FieldLink(1, PROVENANCE);
 
         for (DataField df: record.getDataFields()) {
-            List<Subfield> subfields = df.getSubfields('8');
+            List<Subfield> subfields = df.getSubfields(FIELD_LINK_CODE);
 
             String tag = df.getTag();
             if (!tag.equals("035") && !tag.equals("883")) {
-                df.addSubfield(factory.newSubfield('8', recordFieldLink.asString()));
+                df.addSubfield(factory.newSubfield(FIELD_LINK_CODE, recordFieldLink.asString()));
             }
 
             for (Subfield sf: subfields) {
@@ -239,7 +236,7 @@ public class AggregatedRecordBuilderImpl implements AggregatedRecordBuilder {
 
         DataField systemControlNumber = factory.newDataField("035", ' ', ' ');
         systemControlNumber.addSubfield(factory.newSubfield('a', idn));
-        systemControlNumber.addSubfield(factory.newSubfield('8', recordFieldLink.asString()));
+        systemControlNumber.addSubfield(factory.newSubfield(FIELD_LINK_CODE, recordFieldLink.asString()));
         record.addVariableField(systemControlNumber);
     }
 }
