@@ -6,7 +6,7 @@ A library that uses link:https://github.com/marc4j/marc4j[marc4j] to aggregate M
 
 == Introduction
 
-The CultureGraph project produces groups of records that could be identified by
+The Culturegraph project produces groups of records that could be identified by
 comparing them using a rule based matching procedure.
 
 The library targets the export of those identified records into a single record.
@@ -20,12 +20,14 @@ Assuming a collection of records as input:
 2. Mark each data field (exclude field 035 and link:http://www.loc.gov/marc/bibliographic/bd883.html[883]) in _r_ with the field link _fl_
 
 * Collect all data fields from all records
-1. Re-Enumerate all field links (ascending order)
-2. Create a blank record _b_
-** Set build number as control number (control field link:https://www.loc.gov/marc/authority/ad001.html[001])
-** Set pre-defined cataloging agency (control field link:https://www.loc.gov/marc/authority/ad003.html[003])
-3. Add all data fields to _b_
-4. Return _b_
+1. Sort all data fields
+1. Re-Enumerate all field links
+1. Merge duplicate fields
+1. Create a blank record _b_
+** Use build number as control number (control field link:https://www.loc.gov/marc/authority/ad001.html[001])
+** Use _your link:http://sigel.staatsbibliothek-berlin.de/vergabe/isil/[ISIL]_ as cataloging agency (control field link:https://www.loc.gov/marc/authority/ad003.html[003])
+1. Add all data fields to _b_
+1. Return _b_
 
 
 == Appendix
