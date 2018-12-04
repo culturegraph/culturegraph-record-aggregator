@@ -18,7 +18,7 @@ public class DataFieldComparator implements Comparator<DataField> {
         return new Comparator<Subfield>() {
             @Override
             public int compare(Subfield sf1, Subfield sf2) {
-                int codeComparison = Integer.compare(sf1.getCode(), sf2.getCode());
+                int codeComparison = Character.compare(sf1.getCode(), sf2.getCode());
                 if (codeComparison != 0) return codeComparison;
                 return sf1.getData().compareTo(sf2.getData());
             }
@@ -30,10 +30,10 @@ public class DataFieldComparator implements Comparator<DataField> {
         int tagComparison = o1.getTag().compareTo(o2.getTag());
         if (tagComparison != 0) return tagComparison;
 
-        int ind1Comparison = Integer.compare(o1.getIndicator1(), o2.getIndicator1());
+        int ind1Comparison = Character.compare(o1.getIndicator1(), o2.getIndicator1());
         if (ind1Comparison != 0) return ind1Comparison;
 
-        int ind2Comparison = Integer.compare(o1.getIndicator2(), o2.getIndicator2());
+        int ind2Comparison = Character.compare(o1.getIndicator2(), o2.getIndicator2());
         if (ind2Comparison != 0) return ind2Comparison;
 
         Iterator<Subfield> iter1 = o1.getSubfields().stream()
@@ -58,6 +58,5 @@ public class DataFieldComparator implements Comparator<DataField> {
         }
 
         return 0;
-
     }
 }
