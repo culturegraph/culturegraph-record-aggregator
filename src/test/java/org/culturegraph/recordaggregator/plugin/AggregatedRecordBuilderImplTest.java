@@ -214,6 +214,24 @@ public class AggregatedRecordBuilderImplTest {
     }
 
     @Test
+    /**
+     * A test to make sure that field links with sequence numbers are processable.
+     */
+    public void issueWithSequenceNumberThatLedToException() throws Exception {
+        InputStream inputStream = getClass().getClassLoader().getResourceAsStream("issueWithSequenceNumber.marcxml");
+        MarcXmlReader reader = new MarcXmlReader(inputStream);
+
+        AggregatedRecordBuilder builder = AggregatedRecordBuilderFactory.newBuilder();
+
+        while (reader.hasNext()) {
+            Record record = reader.next();
+            builder.add(record);
+        }
+
+        builder.build();
+    }
+
+    @Test
     public void issueWithNonAggregatedDatafield689() throws Exception {
         InputStream inputStream = getClass().getClassLoader().getResourceAsStream("issueDatafield689.marcxml");
         MarcXmlReader reader = new MarcXmlReader(inputStream);
@@ -268,8 +286,8 @@ public class AggregatedRecordBuilderImplTest {
         assertThat(df.toString(), containsString("$aeng"));
         assertThat(df.toString(), containsString("$81\\p"));
         assertThat(df.toString(), containsString("$82\\p"));
+        assertThat(df.toString(), containsString("$81\\u"));
         assertThat(df.toString(), containsString("$82\\u"));
-        assertThat(df.toString(), containsString("$83\\u"));
     }
 
     @Ignore

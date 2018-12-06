@@ -1,0 +1,837 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<collection xmlns="http://www.loc.gov/MARC21/slim">
+  <record>
+    <leader>00189nam a2200085 c 4500</leader>
+    <controlfield tag="001">44174883X</controlfield>
+    <controlfield tag="003">DE-601</controlfield>
+    <datafield ind1=" " ind2=" " tag="035">
+      <subfield code="a">(OCoLC)237050865</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="035">
+      <subfield code="a">(DE-599)GBV44174883X</subfield>
+    </datafield>
+    <datafield ind1="1" ind2=" " tag="100">
+      <subfield code="a">Abbott, George C.</subfield>
+      <subfield code="e">VerfasserIn</subfield>
+      <subfield code="4">aut</subfield>
+    </datafield>
+  </record>
+  <record>
+    <leader>00256nam a2200097 c 4500</leader>
+    <controlfield tag="001">023217766</controlfield>
+    <controlfield tag="003">DE-601</controlfield>
+    <datafield ind1=" " ind2=" " tag="035">
+      <subfield code="a">(OCoLC)5705815</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="035">
+      <subfield code="a">(DE-599)GBV023217766</subfield>
+    </datafield>
+    <datafield ind1="0" ind2="0" tag="082">
+      <subfield code="a">336.3/4/091724</subfield>
+    </datafield>
+    <datafield ind1="1" ind2=" " tag="100">
+      <subfield code="a">Abbott, George C.</subfield>
+      <subfield code="e">VerfasserIn</subfield>
+      <subfield code="4">aut</subfield>
+      <subfield code="0">(DE-601)392610450</subfield>
+      <subfield code="0">(DE-588)12929781X</subfield>
+    </datafield>
+  </record>
+  <record>
+    <leader>00440cam a22001332c 4500</leader>
+    <controlfield tag="001">122488016</controlfield>
+    <controlfield tag="003">DE-603</controlfield>
+    <datafield ind1=" " ind2=" " tag="035">
+      <subfield code="a">(DE-599)HEB122488016</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="035">
+      <subfield code="a">(OCoLC)05705815</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="084">
+      <subfield code="a">QM 354</subfield>
+      <subfield code="2">rvk</subfield>
+    </datafield>
+    <datafield ind1="1" ind2=" " tag="100">
+      <subfield code="a">Abbott, George C.</subfield>
+      <subfield code="0">(DE-603)162409257</subfield>
+    </datafield>
+    <datafield ind1=" " ind2="7" tag="650">
+      <subfield code="a">Auslandsschulden</subfield>
+      <subfield code="2">gnd</subfield>
+      <subfield code="0">(DE-588)4003783-6</subfield>
+      <subfield code="0">(DE-603)085001872</subfield>
+    </datafield>
+    <datafield ind1=" " ind2="7" tag="650">
+      <subfield code="a">Schulden</subfield>
+      <subfield code="2">gnd</subfield>
+      <subfield code="0">(DE-588)4053461-3</subfield>
+      <subfield code="0">(DE-603)085148350</subfield>
+    </datafield>
+    <datafield ind1=" " ind2="7" tag="651">
+      <subfield code="a">Entwicklungsländer</subfield>
+      <subfield code="2">gnd</subfield>
+      <subfield code="0">(DE-588)4014954-7</subfield>
+      <subfield code="0">(DE-603)08503391X</subfield>
+    </datafield>
+  </record>
+  <record>
+    <leader>00517nam a2200145 c 4500</leader>
+    <controlfield tag="001">634620010</controlfield>
+    <controlfield tag="003">DE-601</controlfield>
+    <datafield ind1=" " ind2=" " tag="035">
+      <subfield code="a">(OCoLC)837814690</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="035">
+      <subfield code="a">(DE-599)GBV634620010</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="084">
+      <subfield code="a">QL 700</subfield>
+      <subfield code="2">rvk</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="084">
+      <subfield code="a">QM 354</subfield>
+      <subfield code="2">rvk</subfield>
+    </datafield>
+    <datafield ind1="1" ind2=" " tag="100">
+      <subfield code="a">Abbott, George C.</subfield>
+      <subfield code="e">VerfasserIn</subfield>
+      <subfield code="4">aut</subfield>
+      <subfield code="0">(DE-601)392610450</subfield>
+      <subfield code="0">(DE-588)12929781X</subfield>
+    </datafield>
+    <datafield ind1=" " ind2="7" tag="650">
+      <subfield code="8">1.1\x</subfield>
+      <subfield code="a">Internationale Staatsschulden</subfield>
+      <subfield code="0">(DE-601)091348986</subfield>
+      <subfield code="0">(DE-STW)10797-2</subfield>
+      <subfield code="2">stw</subfield>
+    </datafield>
+    <datafield ind1=" " ind2="7" tag="650">
+      <subfield code="8">1.2\x</subfield>
+      <subfield code="a">Entwicklungsländer</subfield>
+      <subfield code="0">(DE-601)09135742X</subfield>
+      <subfield code="0">(DE-STW)10492-3</subfield>
+      <subfield code="2">stw</subfield>
+    </datafield>
+    <datafield ind1=" " ind2="0" tag="653">
+      <subfield code="a">Debts, External--Developing countries.</subfield>
+    </datafield>
+  </record>
+  <record>
+    <leader>00642nam a22001932c 4500</leader>
+    <controlfield tag="001">HT000000162</controlfield>
+    <controlfield tag="003">DE-605</controlfield>
+    <datafield ind1=" " ind2=" " tag="035">
+      <subfield code="a">(DE-599)HBZHT000000162</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="084">
+      <subfield code="a">QM 354</subfield>
+      <subfield code="2">rvk</subfield>
+    </datafield>
+    <datafield ind1="1" ind2=" " tag="100">
+      <subfield code="a">Abbott, George C.</subfield>
+      <subfield code="d">1930-</subfield>
+      <subfield code="e">Verfasser</subfield>
+      <subfield code="0">(DE-588)12929781X</subfield>
+      <subfield code="4">aut</subfield>
+    </datafield>
+    <datafield ind1="0" ind2="7" tag="650">
+      <subfield code="a">Schulden</subfield>
+      <subfield code="0">(DE-588)4053461-3</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield ind1="0" ind2="7" tag="650">
+      <subfield code="a">Auslandsschulden</subfield>
+      <subfield code="0">(DE-588)4003783-6</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield ind1=" " ind2="7" tag="651">
+      <subfield code="a">Entwicklungsländer</subfield>
+      <subfield code="0">(DE-588)4014954-7</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield ind1="0" ind2="0" tag="689">
+      <subfield code="a">Entwicklungsländer</subfield>
+      <subfield code="0">(DE-588)4014954-7</subfield>
+      <subfield code="D">g</subfield>
+    </datafield>
+    <datafield ind1="0" ind2="1" tag="689">
+      <subfield code="a">Auslandsschulden</subfield>
+      <subfield code="0">(DE-588)4003783-6</subfield>
+      <subfield code="D">s</subfield>
+    </datafield>
+    <datafield ind1="0" ind2=" " tag="689">
+      <subfield code="5">DE-605</subfield>
+    </datafield>
+    <datafield ind1="1" ind2="0" tag="689">
+      <subfield code="a">Entwicklungsländer</subfield>
+      <subfield code="0">(DE-588)4014954-7</subfield>
+      <subfield code="D">g</subfield>
+    </datafield>
+    <datafield ind1="1" ind2="1" tag="689">
+      <subfield code="a">Schulden</subfield>
+      <subfield code="0">(DE-588)4053461-3</subfield>
+      <subfield code="D">s</subfield>
+    </datafield>
+    <datafield ind1="1" ind2=" " tag="689">
+      <subfield code="5">DE-605</subfield>
+    </datafield>
+  </record>
+  <record>
+    <leader>00703nam a2200217 cb4500</leader>
+    <controlfield tag="001">BV037216467</controlfield>
+    <controlfield tag="003">DE-604</controlfield>
+    <datafield ind1=" " ind2=" " tag="035">
+      <subfield code="a">(OCoLC)837814690</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="035">
+      <subfield code="a">(DE-599)BVBBV037216467</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="084">
+      <subfield code="a">QL 700</subfield>
+      <subfield code="2">rvk</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="084">
+      <subfield code="a">QM 354</subfield>
+      <subfield code="2">rvk</subfield>
+    </datafield>
+    <datafield ind1="1" ind2=" " tag="100">
+      <subfield code="a">Abbott, George C.</subfield>
+      <subfield code="d">1930-</subfield>
+      <subfield code="e">Verfasser</subfield>
+      <subfield code="0">(DE-588)12929781X</subfield>
+      <subfield code="4">aut</subfield>
+    </datafield>
+    <datafield ind1="0" ind2="7" tag="650">
+      <subfield code="a">Schulden</subfield>
+      <subfield code="0">(DE-588)4053461-3</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield ind1="0" ind2="7" tag="650">
+      <subfield code="a">Auslandsschulden</subfield>
+      <subfield code="0">(DE-588)4003783-6</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield ind1=" " ind2="7" tag="651">
+      <subfield code="a">Entwicklungsländer</subfield>
+      <subfield code="0">(DE-588)4014954-7</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield ind1="0" ind2="0" tag="689">
+      <subfield code="a">Entwicklungsländer</subfield>
+      <subfield code="0">(DE-588)4014954-7</subfield>
+      <subfield code="D">g</subfield>
+    </datafield>
+    <datafield ind1="0" ind2="1" tag="689">
+      <subfield code="a">Auslandsschulden</subfield>
+      <subfield code="0">(DE-588)4003783-6</subfield>
+      <subfield code="D">s</subfield>
+    </datafield>
+    <datafield ind1="0" ind2=" " tag="689">
+      <subfield code="5">DE-604</subfield>
+    </datafield>
+    <datafield ind1="1" ind2="0" tag="689">
+      <subfield code="a">Entwicklungsländer</subfield>
+      <subfield code="0">(DE-588)4014954-7</subfield>
+      <subfield code="D">g</subfield>
+    </datafield>
+    <datafield ind1="1" ind2="1" tag="689">
+      <subfield code="a">Schulden</subfield>
+      <subfield code="0">(DE-588)4053461-3</subfield>
+      <subfield code="D">s</subfield>
+    </datafield>
+    <datafield ind1="1" ind2=" " tag="689">
+      <subfield code="5">DE-604</subfield>
+    </datafield>
+  </record>
+  <record>
+    <leader>00928nam a2200277 c 4500</leader>
+    <controlfield tag="001">BV003694663</controlfield>
+    <controlfield tag="003">DE-604</controlfield>
+    <datafield ind1=" " ind2=" " tag="035">
+      <subfield code="a">(OCoLC)5705815</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="035">
+      <subfield code="a">(DE-599)BVBBV003694663</subfield>
+    </datafield>
+    <datafield ind1="0" ind2=" " tag="082">
+      <subfield code="a">336.3/435/091724</subfield>
+    </datafield>
+    <datafield ind1="0" ind2=" " tag="082">
+      <subfield code="a">336.3/4/091724</subfield>
+      <subfield code="2">18</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="084">
+      <subfield code="a">QM 354</subfield>
+      <subfield code="2">rvk</subfield>
+    </datafield>
+    <datafield ind1="1" ind2=" " tag="100">
+      <subfield code="a">Abbott, George C.</subfield>
+      <subfield code="d">1930-</subfield>
+      <subfield code="e">Verfasser</subfield>
+      <subfield code="0">(DE-588)12929781X</subfield>
+      <subfield code="4">aut</subfield>
+    </datafield>
+    <datafield ind1=" " ind2="7" tag="650">
+      <subfield code="a">Buitenlandse schulden</subfield>
+      <subfield code="2">gtt</subfield>
+    </datafield>
+    <datafield ind1=" " ind2="4" tag="650">
+      <subfield code="a">Entwicklungsländer</subfield>
+    </datafield>
+    <datafield ind1=" " ind2="4" tag="650">
+      <subfield code="a">Debts, External</subfield>
+      <subfield code="z">Developing countries</subfield>
+    </datafield>
+    <datafield ind1="0" ind2="7" tag="650">
+      <subfield code="a">Auslandsschulden</subfield>
+      <subfield code="0">(DE-588)4003783-6</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield ind1="0" ind2="7" tag="650">
+      <subfield code="a">Schulden</subfield>
+      <subfield code="0">(DE-588)4053461-3</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield ind1=" " ind2="4" tag="651">
+      <subfield code="a">Developing countries</subfield>
+      <subfield code="x">Debts, External</subfield>
+    </datafield>
+    <datafield ind1=" " ind2="7" tag="651">
+      <subfield code="a">Entwicklungsländer</subfield>
+      <subfield code="0">(DE-588)4014954-7</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield ind1="0" ind2="0" tag="689">
+      <subfield code="a">Entwicklungsländer</subfield>
+      <subfield code="0">(DE-588)4014954-7</subfield>
+      <subfield code="D">g</subfield>
+    </datafield>
+    <datafield ind1="0" ind2="1" tag="689">
+      <subfield code="a">Auslandsschulden</subfield>
+      <subfield code="0">(DE-588)4003783-6</subfield>
+      <subfield code="D">s</subfield>
+    </datafield>
+    <datafield ind1="0" ind2=" " tag="689">
+      <subfield code="5">DE-604</subfield>
+    </datafield>
+    <datafield ind1="1" ind2="0" tag="689">
+      <subfield code="a">Entwicklungsländer</subfield>
+      <subfield code="0">(DE-588)4014954-7</subfield>
+      <subfield code="D">g</subfield>
+    </datafield>
+    <datafield ind1="1" ind2="1" tag="689">
+      <subfield code="a">Schulden</subfield>
+      <subfield code="0">(DE-588)4053461-3</subfield>
+      <subfield code="D">s</subfield>
+    </datafield>
+    <datafield ind1="1" ind2=" " tag="689">
+      <subfield code="5">DE-604</subfield>
+    </datafield>
+  </record>
+  <record>
+    <leader>00989cam a2200241   4500</leader>
+    <controlfield tag="001">007883676</controlfield>
+    <controlfield tag="003">DE-576</controlfield>
+    <datafield ind1=" " ind2=" " tag="035">
+      <subfield code="a">(OCoLC)05705815</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="035">
+      <subfield code="a">(DE-599)BSZ007883676</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="035">
+      <subfield code="a">(DE-615)00202859</subfield>
+    </datafield>
+    <datafield ind1="0" ind2=" " tag="082">
+      <subfield code="a">336.3/4/091724</subfield>
+    </datafield>
+    <datafield ind1="0" ind2=" " tag="082">
+      <subfield code="a">336.3/435/091724</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="084">
+      <subfield code="a">QM 354</subfield>
+      <subfield code="2">rvk</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="084">
+      <subfield code="a">6,24</subfield>
+      <subfield code="2">ssgn</subfield>
+    </datafield>
+    <datafield ind1="1" ind2=" " tag="100">
+      <subfield code="a">Abbott, George C.</subfield>
+      <subfield code="d">1930-</subfield>
+      <subfield code="0">(DE-588)12929781X</subfield>
+      <subfield code="0">(DE-576)160013666</subfield>
+    </datafield>
+    <datafield ind1=" " ind2="4" tag="650">
+      <subfield code="a">Externe öffentliche Verschuldung</subfield>
+      <subfield code="x">Entwicklungsländer</subfield>
+      <subfield code="x">Internationaler Kapitalverkehr</subfield>
+    </datafield>
+    <datafield ind1=" " ind2="4" tag="650">
+      <subfield code="a">Auslands- und Entwicklungshilfe</subfield>
+      <subfield code="x">Direktinvestition</subfield>
+      <subfield code="x">Auslandshilfepolitik einzelner Staaten</subfield>
+      <subfield code="x">Weltwirtschaft</subfield>
+      <subfield code="x">Internationale Kapitalverflechtung</subfield>
+    </datafield>
+    <datafield ind1="0" ind2="0" tag="689">
+      <subfield code="D">g</subfield>
+      <subfield code="0">(DE-588)4014954-7</subfield>
+      <subfield code="0">(DE-576)208909974</subfield>
+      <subfield code="2">gnd</subfield>
+      <subfield code="a">Entwicklungsländer</subfield>
+    </datafield>
+    <datafield ind1="0" ind2="1" tag="689">
+      <subfield code="D">s</subfield>
+      <subfield code="0">(DE-588)4003783-6</subfield>
+      <subfield code="0">(DE-576)208852808</subfield>
+      <subfield code="2">gnd</subfield>
+      <subfield code="a">Auslandsschulden</subfield>
+    </datafield>
+    <datafield ind1="0" ind2=" " tag="689">
+      <subfield code="5">DE-576</subfield>
+    </datafield>
+    <datafield ind1="1" ind2="0" tag="689">
+      <subfield code="D">g</subfield>
+      <subfield code="0">(DE-588)4014954-7</subfield>
+      <subfield code="0">(DE-576)208909974</subfield>
+      <subfield code="2">gnd</subfield>
+      <subfield code="a">Entwicklungsländer</subfield>
+    </datafield>
+    <datafield ind1="1" ind2="1" tag="689">
+      <subfield code="D">s</subfield>
+      <subfield code="0">(DE-588)4053461-3</subfield>
+      <subfield code="0">(DE-576)209103949</subfield>
+      <subfield code="2">gnd</subfield>
+      <subfield code="a">Schulden</subfield>
+    </datafield>
+    <datafield ind1="1" ind2=" " tag="689">
+      <subfield code="5">DE-576</subfield>
+    </datafield>
+  </record>
+  <record>
+    <leader>00187cam a22000851a 4500</leader>
+    <controlfield tag="001">015605621</controlfield>
+    <controlfield tag="003">Uk</controlfield>
+    <datafield ind1="0" ind2="4" tag="082">
+      <subfield code="a">336.3435091724</subfield>
+      <subfield code="2">22</subfield>
+    </datafield>
+    <datafield ind1="1" ind2="0" tag="100">
+      <subfield code="a">Abbott, George C.</subfield>
+    </datafield>
+    <datafield ind1=" " ind2="0" tag="650">
+      <subfield code="a">Debts, External</subfield>
+      <subfield code="z">Developing countries.</subfield>
+    </datafield>
+  </record>
+  <record>
+    <leader>00189nam a2200085 c 4500</leader>
+    <controlfield tag="001">44174883X</controlfield>
+    <controlfield tag="003">DE-601</controlfield>
+    <datafield ind1=" " ind2=" " tag="035">
+      <subfield code="a">(OCoLC)237050865</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="035">
+      <subfield code="a">(DE-599)GBV44174883X</subfield>
+    </datafield>
+    <datafield ind1="1" ind2=" " tag="100">
+      <subfield code="a">Abbott, George C.</subfield>
+      <subfield code="e">VerfasserIn</subfield>
+      <subfield code="4">aut</subfield>
+    </datafield>
+  </record>
+  <record>
+    <leader>00256nam a2200097 c 4500</leader>
+    <controlfield tag="001">023217766</controlfield>
+    <controlfield tag="003">DE-601</controlfield>
+    <datafield ind1=" " ind2=" " tag="035">
+      <subfield code="a">(OCoLC)5705815</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="035">
+      <subfield code="a">(DE-599)GBV023217766</subfield>
+    </datafield>
+    <datafield ind1="0" ind2="0" tag="082">
+      <subfield code="a">336.3/4/091724</subfield>
+    </datafield>
+    <datafield ind1="1" ind2=" " tag="100">
+      <subfield code="a">Abbott, George C.</subfield>
+      <subfield code="e">VerfasserIn</subfield>
+      <subfield code="4">aut</subfield>
+      <subfield code="0">(DE-601)392610450</subfield>
+      <subfield code="0">(DE-588)12929781X</subfield>
+    </datafield>
+  </record>
+  <record>
+    <leader>00440cam a22001332c 4500</leader>
+    <controlfield tag="001">122488016</controlfield>
+    <controlfield tag="003">DE-603</controlfield>
+    <datafield ind1=" " ind2=" " tag="035">
+      <subfield code="a">(DE-599)HEB122488016</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="035">
+      <subfield code="a">(OCoLC)05705815</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="084">
+      <subfield code="a">QM 354</subfield>
+      <subfield code="2">rvk</subfield>
+    </datafield>
+    <datafield ind1="1" ind2=" " tag="100">
+      <subfield code="a">Abbott, George C.</subfield>
+      <subfield code="0">(DE-603)162409257</subfield>
+    </datafield>
+    <datafield ind1=" " ind2="7" tag="650">
+      <subfield code="a">Auslandsschulden</subfield>
+      <subfield code="2">gnd</subfield>
+      <subfield code="0">(DE-588)4003783-6</subfield>
+      <subfield code="0">(DE-603)085001872</subfield>
+    </datafield>
+    <datafield ind1=" " ind2="7" tag="650">
+      <subfield code="a">Schulden</subfield>
+      <subfield code="2">gnd</subfield>
+      <subfield code="0">(DE-588)4053461-3</subfield>
+      <subfield code="0">(DE-603)085148350</subfield>
+    </datafield>
+    <datafield ind1=" " ind2="7" tag="651">
+      <subfield code="a">Entwicklungsländer</subfield>
+      <subfield code="2">gnd</subfield>
+      <subfield code="0">(DE-588)4014954-7</subfield>
+      <subfield code="0">(DE-603)08503391X</subfield>
+    </datafield>
+  </record>
+  <record>
+    <leader>00517nam a2200145 c 4500</leader>
+    <controlfield tag="001">634620010</controlfield>
+    <controlfield tag="003">DE-601</controlfield>
+    <datafield ind1=" " ind2=" " tag="035">
+      <subfield code="a">(OCoLC)837814690</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="035">
+      <subfield code="a">(DE-599)GBV634620010</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="084">
+      <subfield code="a">QL 700</subfield>
+      <subfield code="2">rvk</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="084">
+      <subfield code="a">QM 354</subfield>
+      <subfield code="2">rvk</subfield>
+    </datafield>
+    <datafield ind1="1" ind2=" " tag="100">
+      <subfield code="a">Abbott, George C.</subfield>
+      <subfield code="e">VerfasserIn</subfield>
+      <subfield code="4">aut</subfield>
+      <subfield code="0">(DE-601)392610450</subfield>
+      <subfield code="0">(DE-588)12929781X</subfield>
+    </datafield>
+    <datafield ind1=" " ind2="7" tag="650">
+      <subfield code="8">1.1\x</subfield>
+      <subfield code="a">Internationale Staatsschulden</subfield>
+      <subfield code="0">(DE-601)091348986</subfield>
+      <subfield code="0">(DE-STW)10797-2</subfield>
+      <subfield code="2">stw</subfield>
+    </datafield>
+    <datafield ind1=" " ind2="7" tag="650">
+      <subfield code="8">1.2\x</subfield>
+      <subfield code="a">Entwicklungsländer</subfield>
+      <subfield code="0">(DE-601)09135742X</subfield>
+      <subfield code="0">(DE-STW)10492-3</subfield>
+      <subfield code="2">stw</subfield>
+    </datafield>
+    <datafield ind1=" " ind2="0" tag="653">
+      <subfield code="a">Debts, External--Developing countries.</subfield>
+    </datafield>
+  </record>
+  <record>
+    <leader>00642nam a22001932c 4500</leader>
+    <controlfield tag="001">HT000000162</controlfield>
+    <controlfield tag="003">DE-605</controlfield>
+    <datafield ind1=" " ind2=" " tag="035">
+      <subfield code="a">(DE-599)HBZHT000000162</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="084">
+      <subfield code="a">QM 354</subfield>
+      <subfield code="2">rvk</subfield>
+    </datafield>
+    <datafield ind1="1" ind2=" " tag="100">
+      <subfield code="a">Abbott, George C.</subfield>
+      <subfield code="d">1930-</subfield>
+      <subfield code="e">Verfasser</subfield>
+      <subfield code="0">(DE-588)12929781X</subfield>
+      <subfield code="4">aut</subfield>
+    </datafield>
+    <datafield ind1="0" ind2="7" tag="650">
+      <subfield code="a">Schulden</subfield>
+      <subfield code="0">(DE-588)4053461-3</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield ind1="0" ind2="7" tag="650">
+      <subfield code="a">Auslandsschulden</subfield>
+      <subfield code="0">(DE-588)4003783-6</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield ind1=" " ind2="7" tag="651">
+      <subfield code="a">Entwicklungsländer</subfield>
+      <subfield code="0">(DE-588)4014954-7</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield ind1="0" ind2="0" tag="689">
+      <subfield code="a">Entwicklungsländer</subfield>
+      <subfield code="0">(DE-588)4014954-7</subfield>
+      <subfield code="D">g</subfield>
+    </datafield>
+    <datafield ind1="0" ind2="1" tag="689">
+      <subfield code="a">Auslandsschulden</subfield>
+      <subfield code="0">(DE-588)4003783-6</subfield>
+      <subfield code="D">s</subfield>
+    </datafield>
+    <datafield ind1="0" ind2=" " tag="689">
+      <subfield code="5">DE-605</subfield>
+    </datafield>
+    <datafield ind1="1" ind2="0" tag="689">
+      <subfield code="a">Entwicklungsländer</subfield>
+      <subfield code="0">(DE-588)4014954-7</subfield>
+      <subfield code="D">g</subfield>
+    </datafield>
+    <datafield ind1="1" ind2="1" tag="689">
+      <subfield code="a">Schulden</subfield>
+      <subfield code="0">(DE-588)4053461-3</subfield>
+      <subfield code="D">s</subfield>
+    </datafield>
+    <datafield ind1="1" ind2=" " tag="689">
+      <subfield code="5">DE-605</subfield>
+    </datafield>
+  </record>
+  <record>
+    <leader>00703nam a2200217 cb4500</leader>
+    <controlfield tag="001">BV037216467</controlfield>
+    <controlfield tag="003">DE-604</controlfield>
+    <datafield ind1=" " ind2=" " tag="035">
+      <subfield code="a">(OCoLC)837814690</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="035">
+      <subfield code="a">(DE-599)BVBBV037216467</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="084">
+      <subfield code="a">QL 700</subfield>
+      <subfield code="2">rvk</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="084">
+      <subfield code="a">QM 354</subfield>
+      <subfield code="2">rvk</subfield>
+    </datafield>
+    <datafield ind1="1" ind2=" " tag="100">
+      <subfield code="a">Abbott, George C.</subfield>
+      <subfield code="d">1930-</subfield>
+      <subfield code="e">Verfasser</subfield>
+      <subfield code="0">(DE-588)12929781X</subfield>
+      <subfield code="4">aut</subfield>
+    </datafield>
+    <datafield ind1="0" ind2="7" tag="650">
+      <subfield code="a">Schulden</subfield>
+      <subfield code="0">(DE-588)4053461-3</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield ind1="0" ind2="7" tag="650">
+      <subfield code="a">Auslandsschulden</subfield>
+      <subfield code="0">(DE-588)4003783-6</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield ind1=" " ind2="7" tag="651">
+      <subfield code="a">Entwicklungsländer</subfield>
+      <subfield code="0">(DE-588)4014954-7</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield ind1="0" ind2="0" tag="689">
+      <subfield code="a">Entwicklungsländer</subfield>
+      <subfield code="0">(DE-588)4014954-7</subfield>
+      <subfield code="D">g</subfield>
+    </datafield>
+    <datafield ind1="0" ind2="1" tag="689">
+      <subfield code="a">Auslandsschulden</subfield>
+      <subfield code="0">(DE-588)4003783-6</subfield>
+      <subfield code="D">s</subfield>
+    </datafield>
+    <datafield ind1="0" ind2=" " tag="689">
+      <subfield code="5">DE-604</subfield>
+    </datafield>
+    <datafield ind1="1" ind2="0" tag="689">
+      <subfield code="a">Entwicklungsländer</subfield>
+      <subfield code="0">(DE-588)4014954-7</subfield>
+      <subfield code="D">g</subfield>
+    </datafield>
+    <datafield ind1="1" ind2="1" tag="689">
+      <subfield code="a">Schulden</subfield>
+      <subfield code="0">(DE-588)4053461-3</subfield>
+      <subfield code="D">s</subfield>
+    </datafield>
+    <datafield ind1="1" ind2=" " tag="689">
+      <subfield code="5">DE-604</subfield>
+    </datafield>
+  </record>
+  <record>
+    <leader>00928nam a2200277 c 4500</leader>
+    <controlfield tag="001">BV003694663</controlfield>
+    <controlfield tag="003">DE-604</controlfield>
+    <datafield ind1=" " ind2=" " tag="035">
+      <subfield code="a">(OCoLC)5705815</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="035">
+      <subfield code="a">(DE-599)BVBBV003694663</subfield>
+    </datafield>
+    <datafield ind1="0" ind2=" " tag="082">
+      <subfield code="a">336.3/435/091724</subfield>
+    </datafield>
+    <datafield ind1="0" ind2=" " tag="082">
+      <subfield code="a">336.3/4/091724</subfield>
+      <subfield code="2">18</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="084">
+      <subfield code="a">QM 354</subfield>
+      <subfield code="2">rvk</subfield>
+    </datafield>
+    <datafield ind1="1" ind2=" " tag="100">
+      <subfield code="a">Abbott, George C.</subfield>
+      <subfield code="d">1930-</subfield>
+      <subfield code="e">Verfasser</subfield>
+      <subfield code="0">(DE-588)12929781X</subfield>
+      <subfield code="4">aut</subfield>
+    </datafield>
+    <datafield ind1=" " ind2="7" tag="650">
+      <subfield code="a">Buitenlandse schulden</subfield>
+      <subfield code="2">gtt</subfield>
+    </datafield>
+    <datafield ind1=" " ind2="4" tag="650">
+      <subfield code="a">Entwicklungsländer</subfield>
+    </datafield>
+    <datafield ind1=" " ind2="4" tag="650">
+      <subfield code="a">Debts, External</subfield>
+      <subfield code="z">Developing countries</subfield>
+    </datafield>
+    <datafield ind1="0" ind2="7" tag="650">
+      <subfield code="a">Auslandsschulden</subfield>
+      <subfield code="0">(DE-588)4003783-6</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield ind1="0" ind2="7" tag="650">
+      <subfield code="a">Schulden</subfield>
+      <subfield code="0">(DE-588)4053461-3</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield ind1=" " ind2="4" tag="651">
+      <subfield code="a">Developing countries</subfield>
+      <subfield code="x">Debts, External</subfield>
+    </datafield>
+    <datafield ind1=" " ind2="7" tag="651">
+      <subfield code="a">Entwicklungsländer</subfield>
+      <subfield code="0">(DE-588)4014954-7</subfield>
+      <subfield code="2">gnd</subfield>
+    </datafield>
+    <datafield ind1="0" ind2="0" tag="689">
+      <subfield code="a">Entwicklungsländer</subfield>
+      <subfield code="0">(DE-588)4014954-7</subfield>
+      <subfield code="D">g</subfield>
+    </datafield>
+    <datafield ind1="0" ind2="1" tag="689">
+      <subfield code="a">Auslandsschulden</subfield>
+      <subfield code="0">(DE-588)4003783-6</subfield>
+      <subfield code="D">s</subfield>
+    </datafield>
+    <datafield ind1="0" ind2=" " tag="689">
+      <subfield code="5">DE-604</subfield>
+    </datafield>
+    <datafield ind1="1" ind2="0" tag="689">
+      <subfield code="a">Entwicklungsländer</subfield>
+      <subfield code="0">(DE-588)4014954-7</subfield>
+      <subfield code="D">g</subfield>
+    </datafield>
+    <datafield ind1="1" ind2="1" tag="689">
+      <subfield code="a">Schulden</subfield>
+      <subfield code="0">(DE-588)4053461-3</subfield>
+      <subfield code="D">s</subfield>
+    </datafield>
+    <datafield ind1="1" ind2=" " tag="689">
+      <subfield code="5">DE-604</subfield>
+    </datafield>
+  </record>
+  <record>
+    <leader>00989cam a2200241   4500</leader>
+    <controlfield tag="001">007883676</controlfield>
+    <controlfield tag="003">DE-576</controlfield>
+    <datafield ind1=" " ind2=" " tag="035">
+      <subfield code="a">(OCoLC)05705815</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="035">
+      <subfield code="a">(DE-599)BSZ007883676</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="035">
+      <subfield code="a">(DE-615)00202859</subfield>
+    </datafield>
+    <datafield ind1="0" ind2=" " tag="082">
+      <subfield code="a">336.3/4/091724</subfield>
+    </datafield>
+    <datafield ind1="0" ind2=" " tag="082">
+      <subfield code="a">336.3/435/091724</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="084">
+      <subfield code="a">QM 354</subfield>
+      <subfield code="2">rvk</subfield>
+    </datafield>
+    <datafield ind1=" " ind2=" " tag="084">
+      <subfield code="a">6,24</subfield>
+      <subfield code="2">ssgn</subfield>
+    </datafield>
+    <datafield ind1="1" ind2=" " tag="100">
+      <subfield code="a">Abbott, George C.</subfield>
+      <subfield code="d">1930-</subfield>
+      <subfield code="0">(DE-588)12929781X</subfield>
+      <subfield code="0">(DE-576)160013666</subfield>
+    </datafield>
+    <datafield ind1=" " ind2="4" tag="650">
+      <subfield code="a">Externe öffentliche Verschuldung</subfield>
+      <subfield code="x">Entwicklungsländer</subfield>
+      <subfield code="x">Internationaler Kapitalverkehr</subfield>
+    </datafield>
+    <datafield ind1=" " ind2="4" tag="650">
+      <subfield code="a">Auslands- und Entwicklungshilfe</subfield>
+      <subfield code="x">Direktinvestition</subfield>
+      <subfield code="x">Auslandshilfepolitik einzelner Staaten</subfield>
+      <subfield code="x">Weltwirtschaft</subfield>
+      <subfield code="x">Internationale Kapitalverflechtung</subfield>
+    </datafield>
+    <datafield ind1="0" ind2="0" tag="689">
+      <subfield code="D">g</subfield>
+      <subfield code="0">(DE-588)4014954-7</subfield>
+      <subfield code="0">(DE-576)208909974</subfield>
+      <subfield code="2">gnd</subfield>
+      <subfield code="a">Entwicklungsländer</subfield>
+    </datafield>
+    <datafield ind1="0" ind2="1" tag="689">
+      <subfield code="D">s</subfield>
+      <subfield code="0">(DE-588)4003783-6</subfield>
+      <subfield code="0">(DE-576)208852808</subfield>
+      <subfield code="2">gnd</subfield>
+      <subfield code="a">Auslandsschulden</subfield>
+    </datafield>
+    <datafield ind1="0" ind2=" " tag="689">
+      <subfield code="5">DE-576</subfield>
+    </datafield>
+    <datafield ind1="1" ind2="0" tag="689">
+      <subfield code="D">g</subfield>
+      <subfield code="0">(DE-588)4014954-7</subfield>
+      <subfield code="0">(DE-576)208909974</subfield>
+      <subfield code="2">gnd</subfield>
+      <subfield code="a">Entwicklungsländer</subfield>
+    </datafield>
+    <datafield ind1="1" ind2="1" tag="689">
+      <subfield code="D">s</subfield>
+      <subfield code="0">(DE-588)4053461-3</subfield>
+      <subfield code="0">(DE-576)209103949</subfield>
+      <subfield code="2">gnd</subfield>
+      <subfield code="a">Schulden</subfield>
+    </datafield>
+    <datafield ind1="1" ind2=" " tag="689">
+      <subfield code="5">DE-576</subfield>
+    </datafield>
+  </record>
+</collection>
