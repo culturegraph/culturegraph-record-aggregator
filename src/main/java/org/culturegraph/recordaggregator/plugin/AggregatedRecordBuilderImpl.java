@@ -230,7 +230,10 @@ public class AggregatedRecordBuilderImpl implements AggregatedRecordBuilder {
 
             for (Subfield sf: subfields) {
                 String data = sf.getData();
-                sf.setData(FieldLink.of(data).increment(1).asString());
+                FieldLink fl = FieldLink.of(data);
+                if (fl.type.equals(PROVENANCE)) {
+                    sf.setData(fl.increment(1).asString());
+                }
             }
         }
 
