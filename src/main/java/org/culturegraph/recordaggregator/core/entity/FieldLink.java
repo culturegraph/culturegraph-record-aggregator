@@ -31,7 +31,16 @@ public class FieldLink implements Comparable<FieldLink> {
 
     public static FieldLink of(String s) {
         String[] token = s.split("\\\\", 2);
-        int number = Integer.parseInt(token[0]);
+        String linking_number = token[0];
+
+        int number;
+        if (linking_number.contains(".")) {
+            String linking_number_without_sequence_number = linking_number.split("\\.", 2)[0];
+            number = Integer.parseInt(linking_number_without_sequence_number);
+        } else {
+            number = Integer.parseInt(linking_number);
+        }
+
         String type = token[1];
         return new FieldLink(number, type);
     }
