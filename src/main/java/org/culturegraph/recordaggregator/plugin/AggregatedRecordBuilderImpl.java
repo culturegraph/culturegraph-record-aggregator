@@ -65,8 +65,7 @@ public class AggregatedRecordBuilderImpl implements AggregatedRecordBuilder {
         if (records.isEmpty()) {
             findMaxFieldLink(record.getDataFields(), lastFieldLinks);
         } else {
-            FieldLink lastProvenanceFieldLink = lastFieldLinks.getOrDefault(PROVENANCE, FieldLink.of("1\\p"));
-            incrementAllFieldLinks(record.getDataFields(), lastProvenanceFieldLink.number, lastFieldLinks);
+            incrementAllFieldLinks(record.getDataFields(), lastFieldLinks);
         }
 
         records.add(record);
@@ -121,14 +120,22 @@ public class AggregatedRecordBuilderImpl implements AggregatedRecordBuilder {
     }
 
     /**
-     * Increments each field link (subfield 8 in a data field) by a constant <i>addend</i> among all data fields, if present.
+     * Increments each field link (subfield 8 in a data field) by a constant <i>addend</i>.
      * @return Field link with the highest sequence number among all data fields after the modification, if present.
      */
-    private void incrementAllFieldLinks(List<DataField> dataFields, int addend, Map<String,FieldLink> lastFieldLinks) {
+    private void incrementAllFieldLinks(List<DataField> dataFields, Map<String,FieldLink> lastFieldLinks) {
+        // The *addend* is the highest field number from the previous record in the records list.
+        Map<String,Integer> addends = lastFieldLinks.entrySet().stream()
+                .collect(Collectors.toMap(
+                   e -> e.getKey(),
+                   e -> e.getValue().number
+                ));
 
         for (DataField df: dataFields) {
             for (Subfield sf: df.getSubfields(FIELD_LINK_CODE)) {
-                FieldLink fl = FieldLink.of(sf.getData()).increment(addend);
+                FieldLink fl = FieldLink.of(sf.getData());
+                int addend = addends.getOrDefault(fl.type, 0);
+                fl = fl.increment(addend);
                 String type = fl.type;
 
                 if (lastFieldLinks.getOrDefault(type, null) == null) {
