@@ -39,7 +39,7 @@ public class AggregatedRecordBuilderImplTest {
         aggregator.setCatalogingAgency("DE-101");
     }
 
-    @Test(expected = IllegalArgumentException.class)
+    @Test
     public void shouldNotComplainAboutViolationOfTheComparisonMethodContract() throws Exception {
         InputStream inputStream = getClass().getClassLoader().getResourceAsStream("issueWithViolatedSortingOrder.marcxml");
         MarcXmlReader reader = new MarcXmlReader(inputStream);

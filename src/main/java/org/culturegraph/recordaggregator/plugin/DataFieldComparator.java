@@ -1,7 +1,7 @@
 package org.culturegraph.recordaggregator.plugin;
 
-import java.util.Comparator;
-import java.util.Iterator;
+import java.util.*;
+import java.util.stream.Collectors;
 
 import org.marc4j.marc.DataField;
 import org.marc4j.marc.Subfield;
@@ -36,27 +36,18 @@ public class DataFieldComparator implements Comparator<DataField> {
         int ind2Comparison = Character.compare(o1.getIndicator2(), o2.getIndicator2());
         if (ind2Comparison != 0) return ind2Comparison;
 
-        Iterator<Subfield> iter1 = o1.getSubfields().stream()
+        String s1 = o1.getSubfields().stream()
                 .filter(sf -> sf.getCode() != ignoreSubfieldCode)
                 .sorted(createSubfieldComparator())
-                .iterator();
+                .map(Subfield::toString)
+                .collect(Collectors.joining(""));
 
-        Iterator<Subfield> iter2 = o2.getSubfields().stream()
+        String s2 = o2.getSubfields().stream()
                 .filter(sf -> sf.getCode() != ignoreSubfieldCode)
                 .sorted(createSubfieldComparator())
-                .iterator();
+                .map(Subfield::toString)
+                .collect(Collectors.joining(""));
 
-        Comparator<Subfield> subfieldComparator = createSubfieldComparator();
-        while(iter1.hasNext() && iter2.hasNext()) {
-            Subfield sf1 = iter1.next();
-            Subfield sf2 = iter2.next();
-
-            int subfieldComparison = subfieldComparator.compare(sf1, sf2);
-            if (subfieldComparison != 0) {
-                return subfieldComparison;
-            }
-        }
-
-        return 0;
+        return s1.compareTo(s2);
     }
 }
