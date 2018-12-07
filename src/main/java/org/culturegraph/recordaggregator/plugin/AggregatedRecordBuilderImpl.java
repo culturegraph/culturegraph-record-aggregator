@@ -133,7 +133,13 @@ public class AggregatedRecordBuilderImpl implements AggregatedRecordBuilder {
 
         for (DataField df: dataFields) {
             for (Subfield sf: df.getSubfields(FIELD_LINK_CODE)) {
-                FieldLink fl = FieldLink.of(sf.getData());
+                FieldLink fl;
+                try {
+                    fl = FieldLink.of(sf.getData());
+                } catch (Exception e) {
+                    continue;
+                }
+
                 int addend = addends.getOrDefault(fl.type, 0);
                 fl = fl.increment(addend);
                 String type = fl.type;
@@ -157,7 +163,13 @@ public class AggregatedRecordBuilderImpl implements AggregatedRecordBuilder {
     private void findMaxFieldLink(List<DataField> dataFields, Map<String,FieldLink> lastFieldLinks) {
         for (DataField df: dataFields) {
             for (Subfield sf: df.getSubfields(FIELD_LINK_CODE)) {
-                FieldLink fl = FieldLink.of(sf.getData());
+                FieldLink fl;
+                try {
+                    fl = FieldLink.of(sf.getData());
+                } catch (Exception e) {
+                    continue;
+                }
+
                 String type = fl.type;
 
                 if (lastFieldLinks.getOrDefault(type, null) == null) {
